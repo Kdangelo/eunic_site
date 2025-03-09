@@ -13,7 +13,10 @@ const ContactForm = () => {
         <Row className="mb-3">
           <Col md={6}>
             <Form.Group controlId="formName">
-              <Form.Label>Nombre *</Form.Label>
+              <Form.Label>
+                <span className="text-primary">Nombre</span>{' '}
+                <span className="text-warning">*</span>
+              </Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Ingrese su Nombre"
@@ -24,7 +27,9 @@ const ContactForm = () => {
 
           <Col md={6}>
             <Form.Group controlId="formLastName">
-              <Form.Label>Apellido</Form.Label>
+              <Form.Label>
+                <span className="text-primary">Apellido</span>
+              </Form.Label>
               <Form.Control type="text" placeholder="Ingrese su Apellido" />
             </Form.Group>
           </Col>
@@ -33,7 +38,10 @@ const ContactForm = () => {
         <Row className="mb-3">
           <Col md={6}>
             <Form.Group controlId="formEmail">
-              <Form.Label>Tu Email *</Form.Label>
+              <Form.Label>
+                <span className="text-primary">Tu Email</span>{' '}
+                <span className="text-warning">*</span>
+              </Form.Label>
               <Form.Control
                 type="email"
                 placeholder="Ingrese su Email"
@@ -44,7 +52,10 @@ const ContactForm = () => {
 
           <Col md={6}>
             <Form.Group controlId="formCompany">
-              <Form.Label>Compañía *</Form.Label>
+              <Form.Label>
+                <span className="text-primary">Compañía</span>{' '}
+                <span className="text-warning">*</span>
+              </Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Ingrese su Compañía"
@@ -54,8 +65,11 @@ const ContactForm = () => {
           </Col>
         </Row>
 
-        <Form.Group className="mb-3" controlId="formAsunto">
-          <Form.Label>Asunto *</Form.Label>
+        <Form.Group className="mb-3" controlId="formSubject">
+          <Form.Label>
+            <span className="text-primary">Asunto</span>{' '}
+            <span className="text-warning">*</span>
+          </Form.Label>
           <Form.Control
             type="text"
             placeholder="Ingrese el asunto del mensaje"
@@ -63,8 +77,11 @@ const ContactForm = () => {
           />
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formMensaje">
-          <Form.Label>Mensaje *</Form.Label>
+        <Form.Group className="mb-3" controlId="formMessage">
+          <Form.Label>
+            <span className="text-primary">Mensaje</span>{' '}
+            <span className="text-warning">*</span>
+          </Form.Label>
           <Form.Control
             as="textarea"
             rows={4}
