@@ -6,7 +6,7 @@ const ContactForm = () => {
     <>
       <div className="mb-5 d-lg-none d-md-block">
         <h1 className="text-center">
-          Contáctate con <strong className="text-warning">Espacio Único</strong>
+        Contáctanos y haz realidad tus ideas en <strong className="text-warning">Espacio Único</strong>
         </h1>
       </div>
       <Form className="mx-auto" style={{ maxWidth: "900px" }}>
@@ -74,7 +74,12 @@ const ContactForm = () => {
         </Form.Group>
 
         <div className="d-grid">
-          <Button variant="warning" type="submit" size="lg">
+          <Button
+            variant="warning" 
+            type="submit" 
+            size="lg" 
+            className="text-white fw-bold"
+          >
             Enviar Mensaje
           </Button>
         </div>
