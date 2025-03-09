@@ -90,12 +90,27 @@ const ContactForm = () => {
           />
         </Form.Group>
 
+        <Form.Group className="mb-4" controlId="formCheckbox">
+          <Form.Check 
+            type="checkbox" 
+            label={
+              <>
+                Acepto que mis datos personales sean tratados por Espacio Único de acuerdo con la 
+                <a href="/politica-privacidad" className="text-primary mx-1">Política de Privacidad</a> 
+                  y los 
+                <a href="/terminos-uso" className="text-primary mx-1">Términos de Uso</a>.
+              </>
+            }
+            required 
+          />
+      </Form.Group>
+
         <div className="d-grid">
           <Button
             variant="warning" 
             type="submit" 
             size="lg" 
-            className="text-white fw-bold"
+            className="text-white mt-3"
           >
             Enviar Mensaje
           </Button>
