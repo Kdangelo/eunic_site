@@ -1,4 +1,4 @@
-import './Navbars.css';
+import '../../styles/Navbars.css';
 import logo from '../../assets/imgs/nuevo_logo_unico.fw.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
@@ -42,7 +42,7 @@ const Navbars = () => {
                     <NavDropdown.Item href='#action4'>Proyectos Particulares</NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link href='#action1' className='pe-4 text-black'>Obras Civiles</Nav.Link>
-                  <Nav.Link href='#action1' className='pe-4 text-black'>Contacto</Nav.Link>
+                  <Nav.Link href='#contact' className='pe-4 text-black'>Contacto</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

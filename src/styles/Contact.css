@@ -1,0 +1,8 @@
+.contact-section {
+  background: linear-gradient(to bottom, #717372, #070A0A);
+}
+
+iframe {
+  border: 0;
+  border-radius: 1rem; 
+}
