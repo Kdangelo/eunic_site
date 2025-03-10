@@ -1,5 +1,5 @@
 import '../../styles/Navbars.css';
-import logo from '../../assets/imgs/nuevo_logo_unico.fw.png';
+import logo from '../../assets/imgs/image00001.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Offcanvas from 'react-bootstrap/Offcanvas';
@@ -15,8 +15,8 @@ const Navbars = () => {
             <Navbar.Brand href='/'>
               <img
                 src={logo}
-                width='120'
-                height='40'
+                width='100'
+                height='100'
                 className=''
                 alt='logo empresa Espacio Unico' 
               />
