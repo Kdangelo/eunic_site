@@ -1,5 +1,5 @@
 import '../../styles/Navbars.css';
-import logo from '../../assets/imgs/image00001.png';
+import logo from '../../assets/imgs/log_ok.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Offcanvas from 'react-bootstrap/Offcanvas';
@@ -10,13 +10,13 @@ const Navbars = () => {
   return (
     <>
       {['lg'].map((expand) => (
-        <Navbar className='fixed-top navbar-section shadow' key={expand} expand={expand}>
+        <Navbar className='fixed-top navbar-section' key={expand} expand={expand}>
           <Container>
             <Navbar.Brand href='/'>
               <img
                 src={logo}
-                width='100'
-                height='100'
+                width='150'
+                height='47'
                 className=''
                 alt='logo empresa Espacio Unico' 
               />

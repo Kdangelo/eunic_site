@@ -4,11 +4,11 @@ import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
-    <section>
+    <section className="contact-section">
       <Container fluid>
         <Row>
           {/* Columna izquierda - Información de contacto */}
-          <Col lg={5} className='order-2 order-lg-1 text-bg-primary p-5 contact-section'>
+          <Col lg={5} className='order-2 order-lg-1 text-bg-primary p-5 contact-info'>
             <div className='m-5 d-none d-lg-block'>
               <h1>
               Contáctanos y haz realidad tus ideas en <strong className="text-warning">Espacio Único</strong>
