@@ -1,4 +1,4 @@
-import "../../styles/Contact.css";
+import 'styles/Contact.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import ContactForm from './ContactForm';
 

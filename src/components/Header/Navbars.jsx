@@ -1,4 +1,4 @@
-import '../../styles/Navbars.css';
+import './Navbars.css';
 import logo from '../../assets/imgs/log_ok.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';

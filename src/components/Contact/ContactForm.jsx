@@ -1,5 +1,5 @@
-import "../../styles/ContactForm.css";
-import { Button, Col, Form, Row } from "react-bootstrap";
+import './ContactForm.css';
+import { Button, Col, Form, Row } from 'react-bootstrap';
 
 const ContactForm = () => {
   return (
