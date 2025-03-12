@@ -1,5 +1,9 @@
 .about-section {
   margin-top: 100px;
   min-height: calc(100vh - 100px);
-  background-color: blue ;
+  background-color: black;
+}
+
+.how-we-work {
+  background-color: #184D59;
 }
