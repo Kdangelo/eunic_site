@@ -1,6 +1,6 @@
-import 'styles/Contact.css';
+import './Contact.scss';
 import { Col, Container, Row } from 'react-bootstrap';
-import ContactForm from '../ContactForm/ContactForm';
+import ContactForm from "../../components/common/ContactForm/ContactForm";
 
 const Contact = () => {
   return (

@@ -1,4 +1,4 @@
-import './ContactForm.css';
+import './ContactForm.scss';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 
 const ContactForm = () => {

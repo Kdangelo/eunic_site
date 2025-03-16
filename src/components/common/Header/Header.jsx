@@ -1,5 +1,5 @@
-import { Container } from 'react-bootstrap';
 import Navbars from './Navbars';
+import { Container } from 'react-bootstrap';
 
 const Header = () => {
   return (

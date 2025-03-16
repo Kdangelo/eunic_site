@@ -1,10 +1,6 @@
-import './Navbars.css';
-import logo from '../../assets/images/log_ok.png';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import './Navbars.scss';
+import logo from '../../../assets/images/log_ok.png';
+import { Container, Nav, Navbar, NavDropdown, Offcanvas } from 'react-bootstrap';
 
 const Navbars = () => {
   return (
