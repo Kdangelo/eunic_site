@@ -18,22 +18,24 @@ const Contact = () => {
               <div className='mb-5'>
                 <h4><strong>Dirección</strong></h4>
                 <p>
-                  Santa Amalia 3500 Depto 33 F Edificio F
+                  Avda. Santa Rosa 2057, Galpón 3B
                   <br />
-                  La Florida, Santiago de Chile
+                  San Bernardo, Región Metropolitana
                 </p>
               </div>
               <div className='mb-5'>
                 <h4><strong>Información de Contacto</strong></h4>
                 <p>
-                  Tel: +56 9 5555 55555
+                  Tel: +56 9 7448 8795
                   <br />
-                  Email: contacto@eunico.cl
+                  +56 9 7448 8795
+                  <br />
+                  Email: ventas@eunico.cl
                 </p>
               </div>
               <div>
                 <iframe
-                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.3514199343817!2d-70.55961031116958!3d-33.544244704643944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d13938089d37%3A0xc36d7aeca5c7455e!2sSta.%20Amalia%203500%2C%20Depto%2033%20F%20Edificio%20F%2C%208290886%20La%20Florida%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1719968890769!5m2!1ses!2scl'
+                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.6634164774723!2d-70.63527792430119!3d-33.63996817331494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d819ce77cecf%3A0x88c3ff7dbfd6ceb8!2sAv.%20Sta.%20Rosa%202057%2C%20San%20Bernardo%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1742256853934!5m2!1ses!2scl'
                   width='100%'
                   height='250'
                   style={{ border: 0 }}

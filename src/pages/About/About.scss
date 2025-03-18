@@ -5,5 +5,87 @@
 }
 
 .how-we-work {
+  padding-top: 100px;
+  min-height: calc(100vh - 100px);
   background-color: #184D59;
+
+  .steps-container {
+    .steps-container {
+      position: relative;
+    }
+    
+    .step-item {
+      position: relative;
+      display: flex;
+    }
+    
+    .step-number-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      width: 60px;
+    }
+    
+    .step-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      .step-number {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+      }
+    }
+    
+    .step-line {
+      width: 2px;
+      height: 100px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin-top: 15px;
+    }
+    
+    .step-content {
+      flex: 1;
+      
+      .step-title {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      
+      p {
+        opacity: 0.8;
+        line-height: 1.6;
+      }
+    }
+    
+    /* El último paso no necesita línea */
+    .step-item:last-child .step-line {
+      display: none;
+    }
+  }
+  
+  /* Para pantallas pequeñas */
+  @media (max-width: 767px) {
+    .how-we-work {
+      .step-item {
+        flex-direction: column;
+        
+        .step-number-column {
+          margin-bottom: 20px;
+          
+          .step-line {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
