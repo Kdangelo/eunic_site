@@ -1,11 +1,11 @@
+import Navbar from './Navbar';
 import { Container } from 'react-bootstrap';
-import Navbars from './Navbars';
 
 const Header = () => {
   return (
     <header>
       <Container>
-        <Navbars />
+        <Navbar />
       </Container>
     </header>
   )
