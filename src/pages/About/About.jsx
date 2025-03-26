@@ -1,5 +1,5 @@
-import './About.scss';
-import { Col, Container, Row } from 'react-bootstrap';
+import "./About.scss";
+import { Col, Container, Row } from "react-bootstrap";
 
 const About = () => {
   return (
@@ -8,51 +8,118 @@ const About = () => {
         <Container>
           <Row className="mb-5">
             <Col xs={12}>
-              <p className="text-white opacity-75 mb-5">NOSOTROS</p>
-              <h1 className="display-5 fw-bold text-white">
-                Contamos con más de 17 años de{" "}
-                <span className="fst-italic text-warning">experiencia</span> en
-                diseño, desarrollo, fabricación e instalación de muebles de
-                cocina, closet, vanitorios, muebles para oficina, quinchos,
-                mobiliario escolar para{" "}
-                <sapn className="fst-italic text-warning">
-                  clientes Inmobiliarios, Particulares e Instituciones Públicas
-                </sapn>
-                .
-              </h1>
+              <p className="text-white opacity-75">NOSOTROS</p>
+            </Col>
+          </Row>
+          <Row className="d-flex flex-lg-column">
+            <Col xs={12} className="d-flex align-items-center">
+              <Row className="d-flex justify-content-between my-md-5 m-2">
+                <Col xs={12} md={6}>
+                  <h3 className="text-warning">Misión</h3>
+                </Col>
+                <Col xs={12} md={6}>
+                  <p className="text-white fw-semibold">
+                    Diseñamos, desarrollamos y ejecutamos proyectos mobiliarios
+                    de alta calidad adaptados a las necesidades y expectativas
+                    de nuestros clientes, con un alto compromiso en la calidad y
+                    oportunidad del servicio, basados en un equipo humano
+                    cohesionado y comprometido con procesos de mejora continua
+                    que garantizan la satisfacción de nuestros clientes y el
+                    crecimiento de la empresa.
+                  </p>
+                </Col>
+              </Row>
+            </Col>
+            <Col xs={12} className="d-flex align-items-center">
+              <Row className="d-flex justify-content-between my-md-5 m-2">
+                <Col xs={12} md={6} className="d-md-none">
+                  <h3 className="text-warning">Visión</h3>
+                </Col>
+                <Col xs={12} md={6}>
+                  <p className="text-white fw-semibold">
+                    Nos proyectamos a ser una de las empresas más importante en
+                    el abastecimiento de mobiliario para nuevos proyectos
+                    constructivo en la zona central del país, destacándonos por
+                    ofrecer productos y servicios de alta calidad que superen
+                    las expectativas de nuestros clientes, asegurando la
+                    rentabilidad empresa, la fuente de trabajo de nuestros
+                    colaboradores, y crecimiento sostenido bajo extrictas reglas
+                    éticas y responsabilidad social.
+                  </p>
+                </Col>
+                <Col xs={12} md={6} className=" d-none d-md-block text-end">
+                  <h3 className="text-warning">Visión</h3>
+                </Col>
+              </Row>
             </Col>
           </Row>
           <Row className="g-3 g-md-4 g-xl-5 mt-5">
             <Col xs={12}>
-              <h2 className="text-white">Aportamos valor.</h2>
+              <h2 className="text-white">Nuestros Valores.</h2>
             </Col>
             <Col md={4}></Col>
             <Col md={4}>
               <div className="h-100 p-4">
-                <h3 className="mb-3 text-warning">¿Por qué elegirnos?</h3>
-                <p className="mb-0 text-white">
-                  Buscamos la excelencia en todo lo que hacemos y estamos
-                  comprometidos a contribuir a la sociedad en donde actuamos,
-                  privilegiando la excelencia, la integridad, la calidad y la
-                  innovación en el diseño. Celebramos las buenas ideas, la
-                  camaradería y el alto desempeño.
+                <h3 className="mb-3 text-warning">Ética Empresarial</h3>
+                <p className="mb-0 text-white fw-semibold">
+                  Nuestra actuación se rige por la honestidad y transparencia empresarial,
+                  equidad corporativa, y competencia leal.
                 </p>
               </div>
             </Col>
             <Col md={4}>
               <div className="h-100 p-4">
-                <h3 className="mb-3 text-warning">Ofrecemos</h3>
-                <p className="mb-0 text-white">
-                  Esmerada atención, entrega a tiempo, muebles de alta calidad,
-                  y precios competitivos, complementada por un alto grado de
-                  rectitud en la interrelación con clientes, proveedores y
-                  terceros interesados.
+                <h3 className="mb-3 text-warning">Respeto</h3>
+                <p className="mb-0 text-white fw-semibold">
+                  Brindamos un trato justo, considerado y deferente a nuestros clientes,
+                  proveedores, empleados y terceros interesados.
+                </p>
+              </div>
+            </Col>
+            <Col md={4}></Col>
+            <Col md={4}>
+              <div className="h-100 p-4">
+                <h3 className="mb-3 text-warning">Compromiso</h3>
+                <p className="mb-0 text-white fw-semibold">
+                  Mantenemos un compromiso permanente con nuestros clientes en términos de calidad,
+                  garantía y puntualidad.
+                </p>
+              </div>
+            </Col>
+            <Col md={4}>
+              <div className="h-100 p-4">
+                <h3 className="mb-3 text-warning">Calidad</h3>
+                <p className="mb-0 text-white fw-semibold">
+                  Tomamos la perfección con pasión, persistencia y consistencia, como rasgo
+                  distintivo para ser eficaces en la satisfacción de las necesidades y
+                  sueños de nuestros clientes.
+                </p>
+              </div>
+            </Col>
+            <Col md={4}></Col>
+            <Col md={4}>
+              <div className="h-100 p-4">
+                <h3 className="mb-3 text-warning">Confianza</h3>
+                <p className="mb-0 text-white fw-semibold">
+                  Actuamos con honradez, honestidad, rectitud, probidad y moralidad, en una
+                  permanente búsqueda de la confianza y lealtad de nuestros clientes.
+                </p>
+              </div>
+            </Col>
+            <Col md={4}>
+              <div className="h-100 p-4">
+                <h3 className="mb-3 text-warning">Trabajo en Equipo</h3>
+                <p className="mb-0 text-white fw-semibold">
+                  Promovemos el trabajo cohesionado impulsando la coordinación, cooperación y 
+                  cocreación, motivando a nuestros colaboradores a entregar su máximo potencial 
+                  para alcanzar sus metas personales y contribuir a los objetivos empresariales.
                 </p>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
+
       <section className="how-we-work">
         <Container>
           <Row>
@@ -90,8 +157,8 @@ const About = () => {
                   <div className="step-content">
                     <h4 className="step-title text-white mb-3">COTIZACIÓN</h4>
                     <p className="text-white">
-                    Proceso de costeo por tipo de producto en detalle. Guía
-                    para evaluar avances y estados de pago.
+                      Proceso de costeo por tipo de producto en detalle. Guía
+                      para evaluar avances y estados de pago.
                     </p>
                   </div>
                 </div>
@@ -105,7 +172,9 @@ const About = () => {
                     <div className="step-line"></div>
                   </div>
                   <div className="step-content">
-                    <h4 className="step-title text-white mb-3">DOCUMENTACIÓN</h4>
+                    <h4 className="step-title text-white mb-3">
+                      DOCUMENTACIÓN
+                    </h4>
                     <p className="text-white">
                       Contrato de Obra, Anexos económicos, Orden de Compra.
                     </p>
