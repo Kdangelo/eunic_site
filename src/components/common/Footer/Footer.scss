@@ -1,0 +1,17 @@
+.footer {
+  background-color: #000000;
+  color: #FFFFFF;
+
+  h2 {
+    font-weight: 600;
+  }
+
+  .nav-link {
+    padding-left: 0;
+    
+    &:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+  }
+}
