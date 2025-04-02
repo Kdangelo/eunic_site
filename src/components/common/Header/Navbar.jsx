@@ -7,7 +7,7 @@ const Navbars = () => {
   return (
     <>
       {["lg"].map((expand) => (
-        <Navbar className="fixed-top navbar-section" key={expand} expand={expand}>
+        <Navbar className="navbar-section" key={expand} expand={expand}>
           <Container>
             <LinkContainer to="/">
               <Navbar.Brand>
