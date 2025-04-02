@@ -5,10 +5,12 @@ import './assets/scss/bootstrap.scss';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
+const basename = import.meta.env.PROD ? '/eunic_site' : '/';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
-    <BrowserRouter basename="/eunic_site">
+    <BrowserRouter basename={basename}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
