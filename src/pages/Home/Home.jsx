@@ -1,9 +1,11 @@
 import "./Home.scss";
 import { Col, Container, Row } from "react-bootstrap";
+import CarouselHome from "../../components/common/Carousel/CarouselHome";
 
 const Home = () => {
   return (
     <>
+      <CarouselHome />
       <section className="home-section pt-5">
         <Container>
           <Row className="mb-5">
