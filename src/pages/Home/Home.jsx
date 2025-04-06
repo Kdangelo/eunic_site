@@ -60,11 +60,11 @@ const Home = () => {
         <Container className="position-relative">
           <Row className="g-3 g-md-4 g-xl-5 mt-5">
             <Col xs={12}>
-              <h1 className="text-white d-inline-block px-5 py-3" style={{ backgroundColor: '#717372' }}>Aportamos valor</h1>
+              <h1 className="text-white d-inline-block px-5 py-3" style={{ backgroundColor: 'rgba(113, 115, 114, 0.8)' }}>Aportamos valor</h1>
             </Col>
             <Col lg={2} className="d-none d-lg-block"></Col>
             <Col md={6} lg={5}>
-              <div className="h-100 p-4" style={{ backgroundColor: '#717372' }}>
+              <div className="h-100 p-4" style={{ backgroundColor: 'rgba(113, 115, 114, 0.8)' }}>
                 <h3 className="mb-3 text-warning">¿Por qué elegirnos?</h3>
                 <h4 className="mb-0 text-white fw-semibold">
                   Buscamos la excelencia en todo lo que hacemos y estamos
@@ -76,9 +76,9 @@ const Home = () => {
               </div>
             </Col>
             <Col md={6} lg={5}>
-              <div className="h-100 p-4" style={{ backgroundColor: '#717372' }}>
-                <h3 className="mb-3 text-warning" style={{ backgroundColor: 'rgba(113, 115, 114, 0.5)' }}>Ofrecemos</h3>
-                <h4 className="mb-0 text-white fw-semibold" style={{ backgroundColor: '#717372' }}>
+              <div className="h-100 p-4" style={{ backgroundColor: 'rgba(113, 115, 114, 0.8)' }}>
+                <h3 className="mb-3 text-warning">Ofrecemos</h3>
+                <h4 className="mb-0 text-white fw-semibold">
                   Esmerada atención, entrega a tiempo, muebles de alta calidad,
                   y precios competitivos, complementada por un alto grado de
                   rectitud en la interrelación con clientes, proveedores y
