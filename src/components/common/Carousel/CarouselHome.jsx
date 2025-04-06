@@ -8,10 +8,8 @@ import slide3Desktop from "../../../assets/images/slide3-desktop.jpg";
 import slide3Mobile from "../../../assets/images/slide3-mobile.jpg";
 
 const CarouselHome = () => {
-  const baseURL = import.meta.env.BASE_URL; // GitHub Pages fix
-
   return (
-      <Carousel fade indicators={true} controls={true}>
+      <Carousel fade>
         <Carousel.Item>
           <picture>
             <source srcSet={slide1Mobile} media="(max-width: 576px)" />
