@@ -62,11 +62,11 @@ const Home = () => {
             <Col xs={12}>
               <h1 className="text-white d-inline-block px-5 py-3" style={{ backgroundColor: '#717372' }}>Aportamos valor</h1>
             </Col>
-            <Col md={4}></Col>
-            <Col md={4}>
-              <div className="h-100 p-4">
-                <h3 className="mb-3 text-warning" style={{ backgroundColor: 'rgba(113, 115, 114, 0.5)' }}>¿Por qué elegirnos?</h3>
-                <h4 className="mb-0 text-white fw-semibold" style={{ backgroundColor: '#717372' }}>
+            <Col lg={2} className="d-none d-lg-block"></Col>
+            <Col md={6} lg={5}>
+              <div className="h-100 p-4" style={{ backgroundColor: '#717372' }}>
+                <h3 className="mb-3 text-warning">¿Por qué elegirnos?</h3>
+                <h4 className="mb-0 text-white fw-semibold">
                   Buscamos la excelencia en todo lo que hacemos y estamos
                   comprometidos a contribuir a la sociedad en donde actuamos,
                   privilegiando la excelencia, la integridad, la calidad y la
@@ -75,8 +75,8 @@ const Home = () => {
                 </h4>
               </div>
             </Col>
-            <Col md={4}>
-              <div className="h-100 p-4">
+            <Col md={6} lg={5}>
+              <div className="h-100 p-4" style={{ backgroundColor: '#717372' }}>
                 <h3 className="mb-3 text-warning" style={{ backgroundColor: 'rgba(113, 115, 114, 0.5)' }}>Ofrecemos</h3>
                 <h4 className="mb-0 text-white fw-semibold" style={{ backgroundColor: '#717372' }}>
                   Esmerada atención, entrega a tiempo, muebles de alta calidad,
