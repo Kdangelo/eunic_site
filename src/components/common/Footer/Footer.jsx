@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col lg={3} md={6} xs={12} className="mb-4 mb-lg-0">
-            <h2 className="text-white mb-4">MENÚ</h2>
+            <h2 className="text-white border-bottom border-warning border-2 me-5 mb-4 pb-3">MENÚ</h2>
             <Nav className="flex-column">
               <LinkContainer to="/about">
                 <Nav.Link className="text-white py-1">Nosotros</Nav.Link>
@@ -37,7 +37,7 @@ const Footer = () => {
             </Nav>
           </Col>
           <Col lg={3} md={6} xs={12} className="mb-4 mb-lg-0">
-            <h2 className="text-white mb-4">CONTACTO</h2>
+            <h2 className="text-white border-bottom border-warning border-2 me-5 mb-4 pb-3">CONTACTO</h2>
             <div className="">
               <p className="text-white mb-2">+56 9 7448 8795</p>
               <p className="text-white mb-2">ventas@eunico.cl</p>
@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col lg={3} md={6} xs={12}>
-            <h2 className="text-white mb-4">LEGAL</h2>
+            <h2 className="text-white border-bottom border-warning border-2 me-5 mb-4 pb-3">LEGAL</h2>
           </Col>
         </Row>
       </Container>
