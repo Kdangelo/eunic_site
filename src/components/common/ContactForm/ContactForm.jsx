@@ -53,13 +53,11 @@ const ContactForm = () => {
           <Col md={6}>
             <Form.Group controlId="formCompany">
               <Form.Label>
-                <span className="text-primary">Compañía</span>{' '}
-                <span className="text-warning">*</span>
+                <span className="text-primary">Compañía</span>
               </Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Ingrese su Compañía"
-                required
               />
             </Form.Group>
           </Col>
@@ -90,11 +88,11 @@ const ContactForm = () => {
           />
         </Form.Group>
 
-        <Form.Group className="mb-4" controlId="formCheckbox">
+{/*         <Form.Group className="mb-4" controlId="formCheckbox">
           <Form.Check 
             type="checkbox" 
             label={
-              <>
+              <a>
                 Acepto que mis datos personales sean tratados por Espacio Único de acuerdo con la 
                 <a href="/politica-privacidad" className="text-primary mx-1">Política de Privacidad</a> 
                   y los 
@@ -103,7 +101,7 @@ const ContactForm = () => {
             }
             required 
           />
-      </Form.Group>
+        </Form.Group> */}
 
         <div className="d-grid">
           <Button
