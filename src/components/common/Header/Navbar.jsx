@@ -1,7 +1,7 @@
 import './Navbar.scss';
 import { useState } from 'react';
 import logo from '../../../assets/images/log_ok.png';
-import { Container, Nav, Navbar, NavDropdown, Offcanvas } from 'react-bootstrap';
+import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const Navbars = () => {
@@ -48,7 +48,7 @@ const Navbars = () => {
                     <Nav.Link className='pe-4 text-black'>Nosotros</Nav.Link>
                   </LinkContainer>
 
-                  <NavDropdown
+{/*                   <NavDropdown
                     title="Proyectos"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                     className="pe-3 text-black fs-4"
@@ -59,7 +59,11 @@ const Navbars = () => {
                     <LinkContainer to="/projects/privates" onClick={closeMenu}>
                       <NavDropdown.Item>Proyectos Particulares</NavDropdown.Item>
                     </LinkContainer>
-                  </NavDropdown>
+                  </NavDropdown> */}
+                
+                  <LinkContainer to="/projects" onClick={closeMenu}>
+                    <Nav.Link className='pe-4 text-black'>Proyectos</Nav.Link>
+                  </LinkContainer>
 
 {/*                   <LinkContainer to="/projects/civil-works" onClick={closeMenu}>
                     <Nav.Link className='pe-4 text-black'>Obras Civiles</Nav.Link>

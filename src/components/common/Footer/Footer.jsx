@@ -22,12 +22,12 @@ const Footer = () => {
               <LinkContainer to="/projects">
                 <Nav.Link className="text-white py-1">Proyectos</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/projects/furnitures">
+{/*               <LinkContainer to="/projects/furnitures">
                 <Nav.Link className="text-white py-1">- Proyectos Mobiliarios</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/projects/privates">
                 <Nav.Link className="text-white py-1">- Proyectos Particulares</Nav.Link>
-              </LinkContainer>
+              </LinkContainer> */}
 {/*               <LinkContainer to="/projects/civil-works">
                 <Nav.Link className="text-white py-1">Obras Civiles</Nav.Link>
               </LinkContainer> */}

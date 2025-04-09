@@ -48,11 +48,12 @@ const About = () => {
           </Row>
         </Container>
       </section>
+
       <section className="values-section py-5">
         <Container>
           <Row className="mb-5">
             <Col xs={12}>
-              <h1 className="text-white d-inline-block px-5 py-3 mb-5" style={{ backgroundColor: "rgba(113, 115, 114, 0.8)" }}>Nuestros Valores</h1>
+              <h2 className="text-white d-inline-block px-5 py-3 mb-5" style={{ backgroundColor: "rgba(113, 115, 114, 0.8)" }}>Nuestros Valores</h2>
             </Col>
             <Col lg={2} className="d-none d-lg-block"></Col>
             <Col md={6} lg={5} className="mb-5">
@@ -119,17 +120,17 @@ const About = () => {
         </Container>
       </section>
 
-      <section className="how-we-work">
+      <section className="how-we-work border-bottom border-white mt-5 pb-5">
         <Container>
           <Row>
-            <Col md={12}>
-              <p className="text-white opacity-75 mb-5">ASÍ TRABAJAMOS</p>
+            <Col md={12} className="mt-5">
+              <h4 className="text-white opacity-75 mb-5">ASÍ TRABAJAMOS</h4>
               <h3 className="text-white">Desarrollo de un proyecto</h3>
             </Col>
             <Col md={12}>
               <div className="steps-container m-5">
                 {/* Paso 1 */}
-                <div className="step-item d-flex mb-5">
+                <div className="step-item d-flex mb-4">
                   <div className="step-number-column me-4">
                     <div className="step-circle d-flex justify-content-center align-items-center">
                       <span className="step-number">1</span>
@@ -137,7 +138,7 @@ const About = () => {
                     <div className="step-line"></div>
                   </div>
                   <div className="step-content">
-                    <h4 className="step-title text-white mb-3">DISEÑO</h4>
+                    <h4 className="step-title text-warning mb-3">DISEÑO</h4>
                     <p className="text-white">
                       Proceso de diseño de muebles en función de los
                       requerimientos del cliente, en el menor tiempo posible.
@@ -146,7 +147,7 @@ const About = () => {
                 </div>
 
                 {/* Paso 2 */}
-                <div className="step-item d-flex mb-5">
+                <div className="step-item d-flex mb-4">
                   <div className="step-number-column me-4">
                     <div className="step-circle d-flex justify-content-center align-items-center">
                       <span className="step-number">2</span>
@@ -154,7 +155,7 @@ const About = () => {
                     <div className="step-line"></div>
                   </div>
                   <div className="step-content">
-                    <h4 className="step-title text-white mb-3">COTIZACIÓN</h4>
+                    <h4 className="step-title text-warning mb-3">COTIZACIÓN</h4>
                     <p className="text-white">
                       Proceso de costeo por tipo de producto en detalle. Guía
                       para evaluar avances y estados de pago.
@@ -163,7 +164,7 @@ const About = () => {
                 </div>
 
                 {/* Paso 3 */}
-                <div className="step-item d-flex mb-5">
+                <div className="step-item d-flex mb-4">
                   <div className="step-number-column me-4">
                     <div className="step-circle d-flex justify-content-center align-items-center">
                       <span className="step-number">3</span>
@@ -171,9 +172,7 @@ const About = () => {
                     <div className="step-line"></div>
                   </div>
                   <div className="step-content">
-                    <h4 className="step-title text-white mb-3">
-                      DOCUMENTACIÓN
-                    </h4>
+                    <h4 className="step-title text-warning mb-3">DOCUMENTACIÓN</h4>
                     <p className="text-white">
                       Contrato de Obra, Anexos económicos, Orden de Compra.
                     </p>
@@ -181,7 +180,7 @@ const About = () => {
                 </div>
 
                 {/* Paso 4 */}
-                <div className="step-item d-flex mb-5">
+                <div className="step-item d-flex mb-4">
                   <div className="step-number-column me-4">
                     <div className="step-circle d-flex justify-content-center align-items-center">
                       <span className="step-number">4</span>
@@ -189,7 +188,7 @@ const About = () => {
                     <div className="step-line"></div>
                   </div>
                   <div className="step-content">
-                    <h4 className="step-title text-white mb-3">PRODUCCIÓN</h4>
+                    <h4 className="step-title text-warning mb-3">PRODUCCIÓN</h4>
                     <p className="text-white">
                       Producción en serie, en coordinación con instalación en
                       obra, reduciendo tiempo de entrega.
@@ -198,7 +197,7 @@ const About = () => {
                 </div>
 
                 {/* Paso 5 */}
-                <div className="step-item d-flex mb-5">
+                <div className="step-item d-flex mb-4">
                   <div className="step-number-column me-4">
                     <div className="step-circle d-flex justify-content-center align-items-center">
                       <span className="step-number">5</span>
@@ -206,7 +205,7 @@ const About = () => {
                     <div className="step-line"></div>
                   </div>
                   <div className="step-content">
-                    <h4 className="step-title text-white mb-3">INSTLACIÓN</h4>
+                    <h4 className="step-title text-warning mb-3">INSTLACIÓN</h4>
                     <p className="text-white">
                       Instalación en obra con entregas completas y documentadas
                       por piso. Recepción final ITO.
