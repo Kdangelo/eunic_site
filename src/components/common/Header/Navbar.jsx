@@ -61,9 +61,9 @@ const Navbars = () => {
                     </LinkContainer>
                   </NavDropdown>
 
-                  <LinkContainer to="/projects/civil-works" onClick={closeMenu}>
+{/*                   <LinkContainer to="/projects/civil-works" onClick={closeMenu}>
                     <Nav.Link className='pe-4 text-black'>Obras Civiles</Nav.Link>
-                  </LinkContainer>
+                  </LinkContainer> */}
 
                   <LinkContainer to="/contact" onClick={closeMenu}>
                     <Nav.Link className='pe-4 text-black'>Contacto</Nav.Link>

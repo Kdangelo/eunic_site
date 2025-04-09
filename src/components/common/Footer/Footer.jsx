@@ -28,9 +28,9 @@ const Footer = () => {
               <LinkContainer to="/projects/privates">
                 <Nav.Link className="text-white py-1">- Proyectos Particulares</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/projects/civil-works">
+{/*               <LinkContainer to="/projects/civil-works">
                 <Nav.Link className="text-white py-1">Obras Civiles</Nav.Link>
-              </LinkContainer>
+              </LinkContainer> */}
               <LinkContainer to="/contact">
                 <Nav.Link className="text-white py-1">Contacto</Nav.Link>
               </LinkContainer>

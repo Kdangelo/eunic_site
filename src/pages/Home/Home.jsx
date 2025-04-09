@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <CarouselHome />
-      <section className="pt-5">
+      <section className="home-section pt-5">
         <Container>
           <Row>
             <Col xs={12} className="border-bottom border-black border-2">
