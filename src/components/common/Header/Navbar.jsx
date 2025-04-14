@@ -44,6 +44,10 @@ const Navbars = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-5 fs-4">
+                  <LinkContainer to="/" onClick={closeMenu}>
+                    <Nav.Link className='pe-4 text-black'>Inicio</Nav.Link>
+                  </LinkContainer>
+
                   <LinkContainer to="/about" onClick={closeMenu}>
                     <Nav.Link className='pe-4 text-black'>Nosotros</Nav.Link>
                   </LinkContainer>

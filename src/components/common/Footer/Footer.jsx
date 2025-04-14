@@ -42,9 +42,9 @@ const Footer = () => {
               <p className="text-white mb-2">+56 9 7448 8795</p>
               <p className="text-white mb-2">ventas@eunico.cl</p>
               <p className="text-white mb-2">
-                Avda. Santa Rosa 2057, Galpón 3B
+                Santa Amalia #3500 DP 33 F
                 <br />
-                San Bernardo, Región Metropolitana
+                La Florida, Santiago, Región Metropolitana
               </p>
             </div>
           </Col>
