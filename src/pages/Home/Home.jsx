@@ -8,7 +8,9 @@ import homeValueBackground from "../../assets/images/home-value-background.jpg";
 const Home = () => {
   return (
     <>
-      <CarouselHome />
+      <section className="carousel-section">
+        <CarouselHome />
+      </section>
       <section className="home-section pt-5">
         <Container>
           <Row>

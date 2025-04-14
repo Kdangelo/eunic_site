@@ -1,5 +1,5 @@
 import './CarouselHome.scss';
-import { Carousel } from "react-bootstrap";
+import { Carousel, Container } from "react-bootstrap";
 import slide1Desktop from "../../../assets/images/slide1-desktop.jpg";
 import slide1Mobile from "../../../assets/images/slide1-mobile.jpg";
 import slide2Desktop from "../../../assets/images/slide2-desktop.jpg";
@@ -9,7 +9,8 @@ import slide3Mobile from "../../../assets/images/slide3-mobile.jpg";
 
 const CarouselHome = () => {
   return (
-      <Carousel fade>
+    <Container>
+      <Carousel fade className='carousel-home'>
         <Carousel.Item>
           <picture>
             <source srcSet={slide1Mobile} media="(max-width: 576px)" />
@@ -29,6 +30,7 @@ const CarouselHome = () => {
           </picture>
         </Carousel.Item>
       </Carousel>
+    </Container>
   );
 }
 
