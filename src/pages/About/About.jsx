@@ -1,8 +1,10 @@
 import "./About.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import MisionVision from "./MisionVision";
+import bgImage  from "../../assets/images/about-background.jpg";
 
 const About = () => {
+  console.log("bgImage:", bgImage );
   return (
     <>
       <section className="about-section pt-5">
@@ -16,8 +18,18 @@ const About = () => {
         </Container>
       </section>
 
-      <section className="values-section py-5">
-        <Container>
+      <section className="values-section py-5 position-relative">
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{
+            backgroundImage: `url(${bgImage })`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            zIndex: -1,
+            opacity: 0.8,
+          }}
+        ></div>
+        <Container className="position-relative">
           <Row className="mb-5">
             <Col xs={12}>
               <h2
