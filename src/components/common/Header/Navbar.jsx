@@ -43,7 +43,7 @@ const Navbars = () => {
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}></Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-5 fs-4">
+                <Nav className="justify-content-end flex-grow-1 pe-5 fs-5">
                   <LinkContainer to="/" onClick={closeMenu}>
                     <Nav.Link className='pe-4 text-black'>Inicio</Nav.Link>
                   </LinkContainer>
