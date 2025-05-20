@@ -13,6 +13,7 @@ const Footer = () => {
               <img src={logo} alt="logo empresa Espacio Unico" height="70" />
             </div>
           </Col>
+
           <Col lg={3} md={6} xs={12} className="mb-4 mb-lg-0">
             <h2 className="text-white border-bottom border-warning border-2 me-5 mb-4 pb-3">MENÚ</h2>
             <Nav className="flex-column">
@@ -22,23 +23,15 @@ const Footer = () => {
               <LinkContainer to="/projects">
                 <Nav.Link className="text-white py-1">Proyectos</Nav.Link>
               </LinkContainer>
-{/*               <LinkContainer to="/projects/furnitures">
-                <Nav.Link className="text-white py-1">- Proyectos Mobiliarios</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="/projects/privates">
-                <Nav.Link className="text-white py-1">- Proyectos Particulares</Nav.Link>
-              </LinkContainer> */}
-{/*               <LinkContainer to="/projects/civil-works">
-                <Nav.Link className="text-white py-1">Obras Civiles</Nav.Link>
-              </LinkContainer> */}
               <LinkContainer to="/contact">
                 <Nav.Link className="text-white py-1">Contacto</Nav.Link>
               </LinkContainer>
             </Nav>
           </Col>
+
           <Col lg={3} md={6} xs={12} className="mb-4 mb-lg-0">
             <h2 className="text-white border-bottom border-warning border-2 me-5 mb-4 pb-3">CONTACTO</h2>
-            <div className="">
+            <div>
               <p className="text-white mb-2">+56 9 7448 8795</p>
               <p className="text-white mb-2">ventas@eunico.cl</p>
               <p className="text-white mb-2">
@@ -48,28 +41,34 @@ const Footer = () => {
               </p>
             </div>
           </Col>
+
           <Col lg={3} md={6} xs={12}>
             <h2 className="text-white border-bottom border-warning border-2 me-5 mb-4 pb-3">LEGAL</h2>
             <Nav className="flex-column">
               <a
-                  href="/manual-integridad.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white py-1 nav-link"
-                >
-                  Manual de Integridad Espacio Unico
+                href={`${import.meta.env.BASE_URL}manual-integridad.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white py-1 nav-link"
+              >
+                Manual de Integridad
               </a>
               <a
-                  href="/protocolo-ley-karin.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white py-1 nav-link"
-                >
-                  Protocolo Cumplimiento Ley Karin
+                href={`${import.meta.env.BASE_URL}protocolo-ley-karin.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white py-1 nav-link"
+              >
+                Protocolo Ley Karin
               </a>
             </Nav>
           </Col>
         </Row>
+
+        <hr className="border-secondary my-4" />
+        <p className="text-center text-white-50 mb-0">
+          &copy; {new Date().getFullYear()} Espacio Único. Todos los derechos reservados.
+        </p>
       </Container>
     </footer>
   );
