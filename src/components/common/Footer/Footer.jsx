@@ -50,6 +50,24 @@ const Footer = () => {
           </Col>
           <Col lg={3} md={6} xs={12}>
             <h2 className="text-white border-bottom border-warning border-2 me-5 mb-4 pb-3">LEGAL</h2>
+            <Nav className="flex-column">
+              <a
+                  href="/manual-integridad.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white py-1 nav-link"
+                >
+                  Manual de Integridad Espacio Unico
+              </a>
+              <a
+                  href="/protocolo-ley-karin.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white py-1 nav-link"
+                >
+                  Protocolo Cumplimiento Ley Karin
+              </a>
+            </Nav>
           </Col>
         </Row>
       </Container>
