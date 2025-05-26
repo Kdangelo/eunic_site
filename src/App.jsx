@@ -4,9 +4,10 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Projects from './pages/Projects/Projects';
-import Furnitures from './pages/Projects/Furnitures/Furnitures';
-import Privates from './pages/Projects/Privates/Privates';
-import CivilWorks from './pages/Projects/CivilWorks/CivilWorks';
+import RealEstate from './pages/Projects/RealEstate';
+import CivilWorks from './pages/Projects/CivilWorks';
+import Private from './pages/Projects/Private';
+import SalesRoom from './pages/Projects/SalesRoom';
 
 function App() {
   return (
@@ -15,13 +16,12 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
-        
-        {/* Ruta de proyectos */}
-        <Route path="projects" element={<Projects />}>
-          <Route path="furnitures" element={<Furnitures />} />
-          <Route path="privates" element={<Privates />} />
-          <Route path="civil-works" element={<CivilWorks />} />
-        </Route>
+
+        <Route path="projects" element={<Projects />} />
+        <Route path="projects/real-estate" element={<RealEstate />} />
+        <Route path="projects/civil-works" element={<CivilWorks />} />
+        <Route path="projects/private" element={<Private />} />
+        <Route path="projects/sales-room" element={<SalesRoom />} />
       </Route>
     </Routes>
   );
