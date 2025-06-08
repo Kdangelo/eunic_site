@@ -68,6 +68,15 @@ const Navbars = () => {
                   <LinkContainer to="/projects" onClick={closeMenu}>
                     <Nav.Link className='pe-4 text-black'>Proyectos</Nav.Link>
                   </LinkContainer>
+                  <LinkContainer to="/projects/real-estate" onClick={closeMenu}>
+                    <Nav.Link className='pe-4 text-black'>Inmobiliarios</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/projects/private" onClick={closeMenu}>
+                    <Nav.Link className='pe-4 text-black'>Particulares</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/projects/sales-room" onClick={closeMenu}>
+                    <Nav.Link className='pe-4 text-black'>Salas de Ventas</Nav.Link>
+                  </LinkContainer>
 
 {/*                   <LinkContainer to="/projects/civil-works" onClick={closeMenu}>
                     <Nav.Link className='pe-4 text-black'>Obras Civiles</Nav.Link>

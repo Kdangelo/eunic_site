@@ -15,7 +15,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col xs={12} className="border-bottom border-black border-2">
-              <h1 className="display-5 fw-bold text-white text-center mb-5">
+              <h1 className="display-5 fw-bold text-black text-center mb-5">
                 Muebles que te cambian la vida
               </h1>
             </Col>
@@ -24,11 +24,11 @@ const Home = () => {
             <Col xs={12} md={8} className="mb-4 mb-md-0">
               <h1 className="display-6 fw-bold text-white">
                 Contamos con más de 17 años de{" "}
-                <span className="fst-italic text-warning">experiencia</span> en
+                <span className="fst-italic text-black">experiencia</span> en
                 diseño, desarrollo, fabricación e instalación de muebles de
                 cocina, closet, vanitorios, muebles para oficina, quinchos,
                 mobiliario escolar para{" "}
-                <span className="fst-italic text-warning">
+                <span className="fst-italic text-black">
                   clientes Inmobiliarios, Particulares e Instituciones Públicas
                 </span>
                 .

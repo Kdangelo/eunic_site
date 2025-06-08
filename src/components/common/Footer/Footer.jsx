@@ -23,6 +23,15 @@ const Footer = () => {
               <LinkContainer to="/projects">
                 <Nav.Link className="text-white py-1">Proyectos</Nav.Link>
               </LinkContainer>
+              <LinkContainer to="/projects/real-estate">
+                <Nav.Link className="text-white py-1">- Proyectos Inmobiliarios</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/projects/private">
+                <Nav.Link className="text-white py-1">- Proyectos Particulares</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/projects/sales-room">
+                <Nav.Link className="text-white py-1">- Salas de Ventas</Nav.Link>
+              </LinkContainer>
               <LinkContainer to="/contact">
                 <Nav.Link className="text-white py-1">Contacto</Nav.Link>
               </LinkContainer>
@@ -67,7 +76,7 @@ const Footer = () => {
 
         <hr className="border-secondary my-4" />
         <p className="text-center text-white-50 mb-0">
-          &copy; {new Date().getFullYear()} Espacio Único. Todos los derechos reservados.
+          &copy; {new Date().getFullYear()} Espacio Único®. Todos los derechos reservados.
         </p>
       </Container>
     </footer>

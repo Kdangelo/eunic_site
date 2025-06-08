@@ -11,7 +11,7 @@ const Contact = () => {
           <Col lg={5} className='order-2 order-lg-1 text-bg-primary p-5 contact-info'>
             <div className='m-5 d-none d-lg-block'>
               <h1>
-              Contáctanos y haz realidad tus ideas en <strong className="text-warning">Espacio Único</strong>
+              Contáctanos y haz realidad tus proyectos en <strong className="text-warning">Espacio Único</strong>®
               </h1>
             </div>
             <div className='m-5'>
@@ -28,7 +28,7 @@ const Contact = () => {
                 <p>
                   Tel: +56 9 7448 8795
                   <br />
-                  +56 9 7448 8795
+                  Tel: +56 9 7448 8795 (and*)
                   <br />
                   Email: ventas@eunico.cl
                 </p>

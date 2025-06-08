@@ -221,7 +221,7 @@ const About = () => {
                     <div className="step-line"></div>
                   </div>
                   <div className="step-content">
-                    <h4 className="step-title text-warning mb-3">INSTLACIÓN</h4>
+                    <h4 className="step-title text-warning mb-3">INSTALACIÓN</h4>
                     <p className="text-white">
                       Instalación en obra con entregas completas y documentadas
                       por piso. Recepción final ITO.

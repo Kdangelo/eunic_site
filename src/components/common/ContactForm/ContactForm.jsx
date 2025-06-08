@@ -41,7 +41,7 @@ const ContactForm = () => {
           <Col md={6}>
             <Form.Group controlId="formName">
               <Form.Label>
-                <span className="text-primary">Nombre</span>{' '}
+                <span className="text-black">Nombre</span>{' '}
                 <span className="text-warning">*</span>
               </Form.Label>
               <Form.Control
@@ -56,7 +56,7 @@ const ContactForm = () => {
           <Col md={6}>
             <Form.Group controlId="formLastName">
               <Form.Label>
-                <span className="text-primary">Apellido</span>
+                <span className="text-black">Apellido</span>
               </Form.Label>
               <Form.Control
                 type="text"
@@ -71,7 +71,7 @@ const ContactForm = () => {
           <Col md={6}>
             <Form.Group controlId="formEmail">
               <Form.Label>
-                <span className="text-primary">Tu Email</span>{' '}
+                <span className="text-black">Tu Email</span>{' '}
                 <span className="text-warning">*</span>
               </Form.Label>
               <Form.Control
@@ -86,7 +86,7 @@ const ContactForm = () => {
           <Col md={6}>
             <Form.Group controlId="formCompany">
               <Form.Label>
-                <span className="text-primary">Compañía</span>
+                <span className="text-black">Compañía</span>
               </Form.Label>
               <Form.Control
                 type="text"
@@ -99,7 +99,7 @@ const ContactForm = () => {
 
         <Form.Group className="mb-3" controlId="formSubject">
           <Form.Label>
-            <span className="text-primary">Asunto</span>{' '}
+            <span className="text-black">Asunto</span>{' '}
             <span className="text-warning">*</span>
           </Form.Label>
           <Form.Control
@@ -112,7 +112,7 @@ const ContactForm = () => {
 
         <Form.Group className="mb-3" controlId="formMessage">
           <Form.Label>
-            <span className="text-primary">Mensaje</span>{' '}
+            <span className="text-black">Mensaje</span>{' '}
             <span className="text-warning">*</span>
           </Form.Label>
           <Form.Control
