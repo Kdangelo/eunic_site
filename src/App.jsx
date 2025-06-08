@@ -14,6 +14,10 @@ import ReginaPacis from './pages/Projects/RealEstate/ReginaPacis';
 import SantaElena from './pages/Projects/RealEstate/SantaElena';
 import Helsinski from './pages/Projects/RealEstate/Helsinski';
 import RecreoCowork from './pages/Projects/RealEstate/RecreoCowork';
+import Condominio from './pages/Projects/Private/Condominio';
+import CasaGrande from './pages/Projects/Private/CasaGrande';
+import Loggia from './pages/Projects/Private/Loggia';
+import Merida from "./pages/Projects/SalesRoom/Merida";
 
 function App() {
   return (
@@ -33,6 +37,10 @@ function App() {
         <Route path="projects/real-estate/santa-elena" element={<SantaElena />} />
         <Route path="projects/real-estate/helsinski" element={<Helsinski />} />
         <Route path="projects/real-estate/recreo-cowork" element={<RecreoCowork />} />
+        <Route path="projects/private/casa-grande" element={<CasaGrande />} />
+        <Route path="projects/private/condominio" element={<Condominio />} />
+        <Route path="projects/private/loggia" element={<Loggia />} />
+        <Route path="projects/sales-room/merida-seguridad" element={<Merida />} />
       </Route>
     </Routes>
   );

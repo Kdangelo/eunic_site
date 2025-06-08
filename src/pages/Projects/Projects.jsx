@@ -1,28 +1,30 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+const base = import.meta.env.BASE_URL;
+
 // Project categories and links
 const categories = [
   {
-    title: "Real Estate",
+    title: "Proyectos Inmobiliarios",
     path: "/projects/real-estate",
-    image: "/eunic_site/assets/projects/inmobiliario1.jpg",
+    image: `${base}assets/images/projects/real-estate/project-5/img-1-desktop.jpg`,
   },
   {
+    title: "Proyectos Particulares",
+    path: "/projects/private",
+    image: `${base}assets/images/projects/private/project-1/img-1-desktop.jpg`,
+  },
+  {
+    title: "Salas de ventas",
+    path: "/projects/sales-room",
+    image: `${base}assets/images/projects/sales-room/project-1/img-1-desktop.jpg`,
+  },
+  /*   {
     title: "Civil Works",
     path: "/projects/civil-works",
     image: "/eunic_site/assets/projects/obras1.jpg",
-  },
-  {
-    title: "Private",
-    path: "/projects/private",
-    image: "/eunic_site/assets/projects/particular1.jpg",
-  },
-  {
-    title: "Sales Room",
-    path: "/projects/sales-room",
-    image: "/eunic_site/assets/projects/sala1.jpg",
-  },
+  }, */
 ];
 
 const Projects = () => {
@@ -30,7 +32,7 @@ const Projects = () => {
     <section className="py-5 bg-light">
       <Container>
         <h2 className="text-center mb-5 text-dark text-uppercase">
-          Our Projects
+          Nuestros Proyectos
         </h2>
         <Row>
           {categories.map((cat, index) => (
@@ -41,7 +43,7 @@ const Projects = () => {
                     variant="top"
                     src={cat.image}
                     alt={cat.title}
-                    style={{ height: "200px", objectFit: "cover" }}
+                    style={{ height: "300px", objectFit: "cover" }}
                   />
                   <Card.Body>
                     <Card.Title className="text-dark fs-5 text-center">

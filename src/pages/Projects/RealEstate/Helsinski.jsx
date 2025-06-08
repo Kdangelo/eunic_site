@@ -22,12 +22,12 @@ const Helsinski = () => (
 
       <ProjectGallery images={images} />
 
-      <p>
+{/*       <p>
         The Helsinski project showcases elegant common areas designed for both
         social interaction and relaxation. Featuring contemporary interiors,
         flexible seating zones, and high-end materials, these shared spaces elevate
         the residential experience.
-      </p>
+      </p> */}
     </Container>
   </section>
 );

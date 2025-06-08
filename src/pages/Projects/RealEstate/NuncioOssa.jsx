@@ -18,11 +18,11 @@ const NuncioOssa = () => (
 
       <ProjectGallery images={images} />
 
-      <p>
+{/*       <p>
         Residential building focused on vertical urban living with custom
         finishes and efficient space use. The project includes community areas,
         balconies, and high-quality interior fixtures.
-      </p>
+      </p> */}
     </Container>
   </section>
 );

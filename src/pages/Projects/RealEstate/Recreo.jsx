@@ -18,11 +18,11 @@ const Recreo = () => (
 
       <ProjectGallery images={images} />
 
-      <p>
+{/*       <p>
         Recreo is a residential project featuring modern design and smart spatial
         distribution. It incorporates elegant finishes and shared spaces that foster
         a strong sense of community.
-      </p>
+      </p> */}
     </Container>
   </section>
 );

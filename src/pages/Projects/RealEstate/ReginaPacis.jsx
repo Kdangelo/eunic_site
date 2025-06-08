@@ -20,11 +20,11 @@ const ReginaPacis = () => (
 
       <ProjectGallery images={images} />
 
-      <p>
+{/*       <p>
         Regina Pacis is a residential development known for its architectural harmony
         and thoughtfully designed interiors. The project emphasizes comfort, lighting,
         and modern aesthetics across all its living spaces.
-      </p>
+      </p> */}
     </Container>
   </section>
 );

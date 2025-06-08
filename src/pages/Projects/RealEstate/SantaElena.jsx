@@ -16,17 +16,17 @@ const images = [
 const SantaElena = () => (
   <section className="py-5 bg-light">
     <Container>
-      <h1 className="mb-3">Santa Elena Colina</h1>
+      <h1 className="mb-3">Santa Elena de Colina</h1>
       <p className="lead">Condominio Residencial</p>
 
       <ProjectGallery images={images} />
 
-      <p>
+{/*       <p>
         Santa Elena Colina is a suburban residential condominium project designed
         to offer a peaceful and functional living experience. It features green
         areas, well-defined communal spaces, and architectural consistency
         across units.
-      </p>
+      </p> */}
     </Container>
   </section>
 );

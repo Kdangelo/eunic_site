@@ -20,12 +20,12 @@ const RecreoCowork = () => (
 
       <ProjectGallery images={images} />
 
-      <p>
+{/*       <p>
         The Recreo Cowork project delivers a flexible, comfortable workspace designed
         to encourage productivity and collaboration. With modern finishes, natural
         lighting, and modular areas, it blends functionality with aesthetic harmony
         in a residential context.
-      </p>
+      </p> */}
     </Container>
   </section>
 );
