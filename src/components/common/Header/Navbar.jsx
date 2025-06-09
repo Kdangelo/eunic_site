@@ -1,15 +1,28 @@
 import './Navbar.scss';
+import { useState } from 'react';
 import logo from '../../../assets/images/log_ok.png';
-import { Container, Nav, Navbar, NavDropdown, Offcanvas } from 'react-bootstrap';
+import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const Navbars = () => {
+  // Estado para controlar si el menú está abierto o cerrado
+  const [expanded, setExpanded] = useState(false);
+
+  // Función para cerrar el menú
+  const closeMenu = () => setExpanded(false);
+
   return (
     <>
       {["lg"].map((expand) => (
-        <Navbar className="fixed-top navbar-section" key={expand} expand={expand}>
+        <Navbar
+          className="navbar-section py-4"
+          key={expand}
+          expand={expand}
+          expanded={expanded}
+          onToggle={(expanded) => setExpanded(expanded)}
+        >
           <Container>
-            <LinkContainer to="/">
+            <LinkContainer to="/" onClick={closeMenu}>
               <Navbar.Brand>
                 <img
                   src={logo}
@@ -31,28 +44,45 @@ const Navbars = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-5 fs-5">
-                  <LinkContainer to="/about">
+                  <LinkContainer to="/" onClick={closeMenu}>
+                    <Nav.Link className='pe-4 text-black'>Inicio</Nav.Link>
+                  </LinkContainer>
+
+                  <LinkContainer to="/about" onClick={closeMenu}>
                     <Nav.Link className='pe-4 text-black'>Nosotros</Nav.Link>
                   </LinkContainer>
 
-                  <NavDropdown
+{/*                   <NavDropdown
                     title="Proyectos"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
-                    className="pe-3 text-black"
+                    className="pe-3 text-black fs-4"
                   >
-                    <LinkContainer to="/projects/furnitures">
+                    <LinkContainer to="/projects/furnitures" onClick={closeMenu}>
                       <NavDropdown.Item>Proyectos Mobiliarios</NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to="/projects/privates">
+                    <LinkContainer to="/projects/privates" onClick={closeMenu}>
                       <NavDropdown.Item>Proyectos Particulares</NavDropdown.Item>
                     </LinkContainer>
-                  </NavDropdown>
-
-                  <LinkContainer to="/projects/civil-works">
-                    <Nav.Link className='pe-4 text-black'>Obras Civiles</Nav.Link>
+                  </NavDropdown> */}
+                
+                  <LinkContainer to="/projects" onClick={closeMenu}>
+                    <Nav.Link className='pe-4 text-black'>Proyectos</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/projects/real-estate" onClick={closeMenu}>
+                    <Nav.Link className='pe-4 text-black'>Inmobiliarios</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/projects/private" onClick={closeMenu}>
+                    <Nav.Link className='pe-4 text-black'>Particulares</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/projects/sales-room" onClick={closeMenu}>
+                    <Nav.Link className='pe-4 text-black'>Salas de Ventas</Nav.Link>
                   </LinkContainer>
 
-                  <LinkContainer to="/contact">
+{/*                   <LinkContainer to="/projects/civil-works" onClick={closeMenu}>
+                    <Nav.Link className='pe-4 text-black'>Obras Civiles</Nav.Link>
+                  </LinkContainer> */}
+
+                  <LinkContainer to="/contact" onClick={closeMenu}>
                     <Nav.Link className='pe-4 text-black'>Contacto</Nav.Link>
                   </LinkContainer>
                 </Nav>

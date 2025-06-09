@@ -1,0 +1,27 @@
+.carousel-item {
+  height: 70vh; /* Ajusta según tus necesidades */
+  min-height: 300px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5% !important;
+}
+
+.carousel-indicators {
+  bottom: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 40vh;
+    min-height: 200px;
+  }
+}
