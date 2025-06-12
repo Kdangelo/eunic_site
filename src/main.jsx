@@ -6,7 +6,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import ScrollToTop from '../src/components/common/CrollToTop/ScrollToTop.jsx';
 
-const basename = import.meta.env.MODE === 'production' ? '/eunic_site' : '/';
+const basename = '/';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
