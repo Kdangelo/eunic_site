@@ -4,7 +4,6 @@ import MisionVision from "./MisionVision";
 import bgImage  from "../../assets/images/about-background.jpg";
 
 const About = () => {
-  console.log("bgImage:", bgImage );
   return (
     <>
       <section className="about-section pt-5">

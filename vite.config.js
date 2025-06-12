@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-export default defineConfig(({ command }) => ({
+export default defineConfig(() => ({
   plugins: [react()],
-  base: command === 'build' ? '/eunic_site/' : '/', // Replace 'eunic_site' with your repo name
+  base:'./',
   build: {
     outDir: 'dist',
   },
