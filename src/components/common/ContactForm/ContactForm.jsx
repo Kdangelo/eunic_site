@@ -1,31 +1,34 @@
 import './ContactForm.scss';
-import { Button, Col, Form, Row } from 'react-bootstrap';
+import { Button, Col, Form, Row, Spinner } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 const ContactForm = () => {
   const form = useRef();
+  const [loading, setLoading] = useState(false); // Spinner state
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true); // Start spinner
 
     emailjs
       .sendForm(
-        'service_qptj4cr',     // 🔁 Replace with your EmailJS Service ID
-        'template_gpzaojc',    // 🔁 Replace with your EmailJS Template ID
+        'service_qptj4cr',        // ✅ Your EmailJS service ID
+        'template_gpzaojc',       // ✅ Your EmailJS template ID
         form.current,
-        'RtBhVGOMAVskH7StT')
+        'RtBhVGOMAVskH7StT'       // ✅ Your EmailJS public key
+      )
       .then(
         (result) => {
-          console.log(result.text);
           alert('Mensaje enviado con éxito');
           e.target.reset();
         },
         (error) => {
-          console.error(error.text);
           alert('Ocurrió un error al enviar el mensaje');
+          console.error(error.text);
         }
-      );
+      )
+      .finally(() => setLoading(false)); // Stop spinner
   };
 
   return (
@@ -36,20 +39,14 @@ const ContactForm = () => {
         </h1>
       </div>
 
-      <Form ref={form} onSubmit={sendEmail} className="mx-auto" style={{ maxWidth: "900px" }}>
+      <Form ref={form} onSubmit={sendEmail} className="mx-auto" style={{ maxWidth: '900px' }}>
         <Row className="mb-3">
           <Col md={6}>
             <Form.Group controlId="formName">
               <Form.Label>
-                <span className="text-black">Nombre</span>{' '}
-                <span className="text-warning">*</span>
+                <span className="text-black">Nombre</span> <span className="text-warning">*</span>
               </Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Ingrese su Nombre"
-                name="user_name"
-                required
-              />
+              <Form.Control type="text" placeholder="Ingrese su Nombre" name="user_name" required />
             </Form.Group>
           </Col>
 
@@ -58,11 +55,7 @@ const ContactForm = () => {
               <Form.Label>
                 <span className="text-black">Apellido</span>
               </Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Ingrese su Apellido"
-                name="user_lastname"
-              />
+              <Form.Control type="text" placeholder="Ingrese su Apellido" name="user_lastname" />
             </Form.Group>
           </Col>
         </Row>
@@ -71,15 +64,9 @@ const ContactForm = () => {
           <Col md={6}>
             <Form.Group controlId="formEmail">
               <Form.Label>
-                <span className="text-black">Tu Email</span>{' '}
-                <span className="text-warning">*</span>
+                <span className="text-black">Tu Email</span> <span className="text-warning">*</span>
               </Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Ingrese su Email"
-                name="user_email"
-                required
-              />
+              <Form.Control type="email" placeholder="Ingrese su Email" name="user_email" required />
             </Form.Group>
           </Col>
 
@@ -88,55 +75,38 @@ const ContactForm = () => {
               <Form.Label>
                 <span className="text-black">Compañía</span>
               </Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Ingrese su Compañía"
-                name="user_company"
-              />
+              <Form.Control type="text" placeholder="Ingrese su Compañía" name="user_company" />
             </Form.Group>
           </Col>
         </Row>
 
         <Form.Group className="mb-3" controlId="formSubject">
           <Form.Label>
-            <span className="text-black">Asunto</span>{' '}
-            <span className="text-warning">*</span>
+            <span className="text-black">Asunto</span> <span className="text-warning">*</span>
           </Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Ingrese el asunto del mensaje"
-            name="subject"
-            required
-          />
+          <Form.Control type="text" placeholder="Ingrese el asunto del mensaje" name="subject" required />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formMessage">
           <Form.Label>
-            <span className="text-black">Mensaje</span>{' '}
-            <span className="text-warning">*</span>
+            <span className="text-black">Mensaje</span> <span className="text-warning">*</span>
           </Form.Label>
-          <Form.Control
-            as="textarea"
-            rows={4}
-            placeholder="Escribanos su mensaje"
-            name="message"
-            required
-          />
+          <Form.Control as="textarea" rows={4} placeholder="Escríbanos su mensaje" name="message" required />
         </Form.Group>
 
         {/* Optional privacy checkbox */}
         {/* <Form.Group className="mb-4" controlId="formCheckbox">
-          <Form.Check 
-            type="checkbox" 
+          <Form.Check
+            type="checkbox"
             label={
               <>
-                Acepto que mis datos personales sean tratados por Espacio Único de acuerdo con la 
-                <a href="/politica-privacidad" className="text-primary mx-1">Política de Privacidad</a> 
-                y los 
+                Acepto que mis datos personales sean tratados por Espacio Único de acuerdo con la
+                <a href="/politica-privacidad" className="text-primary mx-1">Política de Privacidad</a>
+                y los
                 <a href="/terminos-uso" className="text-primary mx-1">Términos de Uso</a>.
               </>
             }
-            required 
+            required
           />
         </Form.Group> */}
 
@@ -146,8 +116,16 @@ const ContactForm = () => {
             type="submit"
             size="lg"
             className="text-white mt-3"
+            disabled={loading}
           >
-            Enviar Mensaje
+            {loading ? (
+              <>
+                <Spinner animation="border" size="sm" className="me-2" />
+                Enviando...
+              </>
+            ) : (
+              'Enviar Mensaje'
+            )}
           </Button>
         </div>
       </Form>
