@@ -18,7 +18,7 @@ const Contact = () => {
               <div className='mb-5'>
                 <h4><strong>Dirección</strong></h4>
                 <p>
-                  Santa Amalia #3500 DP 33 F
+                  Santa Amalia #3500 Oficina 33 F
                   <br />
                   La Florida, Santiago, Región Metropolitana
                 </p>
@@ -28,7 +28,7 @@ const Contact = () => {
                 <p>
                   Tel: +56 9 7448 8795
                   <br />
-                  Tel: +56 9 7448 8795 (and*)
+                  Tel: +56 9 9047 2713
                   <br />
                   Email: ventas@eunico.cl
                 </p>
