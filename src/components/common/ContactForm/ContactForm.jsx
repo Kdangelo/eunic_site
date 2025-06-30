@@ -5,18 +5,18 @@ import { useRef, useState } from 'react';
 
 const ContactForm = () => {
   const form = useRef();
-  const [loading, setLoading] = useState(false); // Spinner state
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setLoading(true); // Start spinner
+    setLoading(true); 
 
     emailjs
       .sendForm(
-        'service_qptj4cr',        // ✅ Your EmailJS service ID
-        'template_gpzaojc',       // ✅ Your EmailJS template ID
+        'service_qptj4cr',        
+        'template_gpzaojc',      
         form.current,
-        'RtBhVGOMAVskH7StT'       // ✅ Your EmailJS public key
+        'RtBhVGOMAVskH7StT'      
       )
       .then(
         (result) => {
@@ -28,7 +28,7 @@ const ContactForm = () => {
           console.error(error.text);
         }
       )
-      .finally(() => setLoading(false)); // Stop spinner
+      .finally(() => setLoading(false)); 
   };
 
   return (
